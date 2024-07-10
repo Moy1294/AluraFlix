@@ -1,0 +1,85 @@
+# Especificaciones del Proyecto AluraFlix
+
+## 1. Descripción General
+AluraFlix es una aplicación web desarrollada en React con JavaScript que permite a los usuarios registrar, eliminar, actualizar y listar videos organizados por categorías.
+
+## 2. Funcionalidades Principales
+- Registro de videos
+- Eliminación de videos
+- Actualización de videos
+- Listado de videos por categorías
+
+## 3. Interfaz de Usuario
+
+### 3.1 Header
+- Logotipo de AluraFlix
+- Botón de Home
+- Botón para registrar nuevos videos
+
+### 3.2 Página Principal (Home)
+- Banner con imagen de fondo
+- Secciones de videos organizadas por categorías
+- Cada video se muestra como un card con:
+  - Imagen representativa
+  - Botón de categoría
+  - Título del video
+  - Descripción breve
+  - Iconos para editar y eliminar
+
+### 3.3 Formulario de Registro de Video
+- Campos del formulario:
+  - Título del video
+  - Categoría
+  - URL de la imagen representativa
+  - URL del video
+  - Descripción del video
+- Botones:
+  - Guardar: Registra el video y redirige al home
+  - Limpiar: Borra todos los campos del formulario
+
+### 3.4 Ventana Emergente de Edición
+- Formulario similar al de registro, pero con datos precargados del video seleccionado
+- Botones:
+  - Guardar: Actualiza la información del video
+  - Limpiar: Restaura los campos a los valores originales
+
+### 3.5 Footer
+- Logotipo de AluraFlix
+
+## 4. Requisitos Técnicos
+- Desarrollo en React con JavaScript
+- Diseño responsivo para desktop, tablet y mobile
+- Implementación basada en el diseño proporcionado en Figma (con libertad para personalización)
+
+## 5. Flujo de Trabajo
+1. El usuario accede a la página principal
+2. Puede ver los videos organizados por categorías
+3. Para agregar un nuevo video:
+   - Clic en "Nuevo Video" en el header
+   - Rellenar el formulario de registro
+   - Guardar o limpiar el formulario
+4. Para editar un video:
+   - Clic en el icono de edición en el card del video
+   - Modificar los campos en la ventana emergente
+   - Guardar o cancelar los cambios
+5. Para eliminar un video:
+   - Clic en el icono de eliminación en el card del video
+   - Confirmar la acción de eliminación
+
+## 6. Categorías
+- El proyecto debe incluir categorías predefinidas como Frontend, Backend, Innovación y Gestión
+- Se debe permitir al usuario crear y personalizar sus propias categorías
+
+## 7. Gestión de Tareas
+- Utilizar el cuadro de tareas proporcionado para organizar y gestionar el desarrollo
+- Mover las tarjetas de tareas según su estado de progreso
+
+## 8. Entregables
+- Código fuente del proyecto en React
+- Documentación de instalación y ejecución
+- Enlace al proyecto desplegado (si aplica)
+
+## 9. Consideraciones Adicionales
+- Se anima a los desarrolladores a personalizar y mejorar el diseño propuesto
+- Una vez completado, compartir el proyecto en redes profesionales como LinkedIn
+

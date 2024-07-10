@@ -1,0 +1,113 @@
+.video-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  height: 500px;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.video-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.video-info {
+  padding: 1rem;
+  min-height: 150px; /* Asegura un alto mínimo para la información */
+  display: flex;
+  flex-direction: column;
+}
+
+.video-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.video-info p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+  flex-grow: 1; /* Permite que el párrafo crezca para llenar el espacio */
+}
+
+.category-btn {
+  display: inline-block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.video-actions {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Permite que los clicks pasen a través cuando está oculto */
+}
+
+.video-card:hover .video-actions {
+  opacity: 1;
+  pointer-events: auto; /* Habilita los clicks cuando está visible */
+}
+
+.video-actions button {
+  flex: 1;
+  margin: 0 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.video-actions button:hover {
+  opacity: 1;
+}
+
+.video-actions button:first-child {
+  background-color: #4CAF50;
+}
+
+.video-actions button:last-child {
+  background-color: #f44336;
+}
+
+.confirmation-modal, .edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.confirmation-modal p {
+  margin-bottom: 1rem;
+}
+
+.confirmation-modal button {
+  margin-right: 1rem;
+}
